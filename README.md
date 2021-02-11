@@ -24,3 +24,11 @@ https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar .
 
 Por ahora el sistema esta configurado para correr en us-east-1 para cambiarlo solo cambia en los archivos . En la siguiente actualizacion estará en el archivo config.php 
 //Sorry.
+
+¿Como funciona?
+Selecciona una imagen PNG o JPG.
+El sistema lo va a comprimir con image-compressor.js y lo subirá al servidor.
+Seguido la imagen sera subida a S3 y analizada por textract, para extraer todo el texto que contenga la imagen.
+Despues estos datos los pasaremos por comprehend para Sacar datos como: palabras clave, entidades, sentimientos e idioma.
+Despues se muestra todo esto en el front end y se aprueba y etiqueta por el usuario.
+Al final si es aprovado por el usuario se pasa a indexar el archivo lo cual creará un archivo html con todos los legajos de este documento. Se agregará a mongodb la informacion en texto plano y se guardara junto con la url del archivo (ObjectURL) de S3.
