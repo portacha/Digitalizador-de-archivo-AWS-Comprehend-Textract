@@ -1,0 +1,12 @@
+{
+    "name": "ubuntu/textract",
+    "authors": [
+        {
+            "name": "Axel Jimenez",
+            "email": "axeljc.ddpcv@udemex.edu.mx"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.7"
+    }
+}
