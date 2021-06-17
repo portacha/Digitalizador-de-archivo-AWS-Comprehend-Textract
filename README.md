@@ -1,10 +1,6 @@
 # Digitalizador-de-archivo
 Es un digitalizador o escaner de archivo que usa aws (comprehend, textract y s3). Desarrollado en: php, js, mongodb, bootstrap, jquery.
 
-Para probarlo entra a http://transformacion.udemex.edu.mx/Apps/Textract
-user: prueba
-pass: 1234
-
 Para instalar necesitas instalar npm y composer.
 
 1.- Instala bootstrap y jquery con npm.
